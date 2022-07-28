@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIBasic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="섭씨 온도를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="syV-H5-Nl9">
+                                <rect key="frame" x="20" y="114" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="화씨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhy-jF-iST">
+                                <rect key="frame" x="187" y="192" width="40" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="화씨 온도를 입력하세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHg-RK-ooO">
+                                <rect key="frame" x="20" y="227.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gz-x6-gr5">
+                                <rect key="frame" x="153.5" y="301.5" width="107.5" height="43"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="변환하기">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="AppleSDGothicNeo-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="doConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sm4-Tu-IT6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="섭씨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdx-kv-Rbb">
+                                <rect key="frame" x="185" y="76" width="44" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Mhy-jF-iST" firstAttribute="top" secondItem="syV-H5-Nl9" secondAttribute="bottom" constant="30" id="35k-Fa-j7I"/>
+                            <constraint firstItem="syV-H5-Nl9" firstAttribute="top" secondItem="tdx-kv-Rbb" secondAttribute="bottom" constant="32" id="3J3-tg-bgn"/>
+                            <constraint firstItem="8gz-x6-gr5" firstAttribute="top" secondItem="pHg-RK-ooO" secondAttribute="bottom" constant="23" id="82C-y5-6ym"/>
+                            <constraint firstItem="tdx-kv-Rbb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="B3W-xf-ws4"/>
+                            <constraint firstItem="syV-H5-Nl9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="F0X-38-Qwf"/>
+                            <constraint firstItem="pHg-RK-ooO" firstAttribute="top" secondItem="Mhy-jF-iST" secondAttribute="bottom" constant="20" id="HzU-5K-dRg"/>
+                            <constraint firstItem="Mhy-jF-iST" firstAttribute="top" secondItem="syV-H5-Nl9" secondAttribute="bottom" constant="23" id="Mhh-gs-Z6V"/>
+                            <constraint firstItem="tdx-kv-Rbb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mjg-bz-K8J"/>
+                            <constraint firstItem="8gz-x6-gr5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NI8-GH-OmN"/>
+                            <constraint firstItem="syV-H5-Nl9" firstAttribute="top" secondItem="tdx-kv-Rbb" secondAttribute="bottom" constant="10" id="OUt-G5-aEf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="syV-H5-Nl9" secondAttribute="trailing" constant="20" id="Ogn-su-3Sm"/>
+                            <constraint firstItem="syV-H5-Nl9" firstAttribute="top" secondItem="tdx-kv-Rbb" secondAttribute="bottom" id="QHP-pI-0n1"/>
+                            <constraint firstItem="pHg-RK-ooO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Usa-qE-coW"/>
+                            <constraint firstItem="tdx-kv-Rbb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VRS-T1-cjm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pHg-RK-ooO" secondAttribute="trailing" constant="20" id="azV-2z-Cgi"/>
+                            <constraint firstItem="8gz-x6-gr5" firstAttribute="top" secondItem="pHg-RK-ooO" secondAttribute="bottom" constant="23" id="ied-Nd-hfU"/>
+                            <constraint firstItem="8gz-x6-gr5" firstAttribute="top" secondItem="pHg-RK-ooO" secondAttribute="bottom" constant="40" id="tG3-lG-IOn"/>
+                            <constraint firstItem="8gz-x6-gr5" firstAttribute="top" secondItem="pHg-RK-ooO" secondAttribute="bottom" constant="40" id="zaL-8D-hGu"/>
+                            <constraint firstItem="Mhy-jF-iST" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zmn-oy-RaC"/>
+                            <constraint firstItem="Mhy-jF-iST" firstAttribute="top" secondItem="syV-H5-Nl9" secondAttribute="bottom" constant="32" id="zxv-S0-29a"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tyy-gJ-Bsr" appends="YES" id="qJH-pa-Wfe"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="syV-H5-Nl9" id="hbG-JD-UvT"/>
+                        <outlet property="label2" destination="pHg-RK-ooO" id="wb9-Bt-rSi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tyy-gJ-Bsr">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="OXs-Na-7T7"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

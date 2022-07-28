@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>807391683361-r885m1d25utcpsgdsnn0op1fphh1hep2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.807391683361-r885m1d25utcpsgdsnn0op1fphh1hep2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBKiM1t8DiOY6jxE7u9V8aUOxk-r2rQNAU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>807391683361</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.MJA.MemoFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>send-message-44781</string>
+	<key>STORAGE_BUCKET</key>
+	<string>send-message-44781.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:807391683361:ios:7951d6c9e0c4d0c21d5460</string>
+</dict>
+</plist>
